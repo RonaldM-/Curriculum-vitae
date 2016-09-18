@@ -1,3 +1,88 @@
+@import "https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800|Oswald:300,400,700|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i";
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
 
+body {
+  font-family: Raleway, sans-serif;
+  font-weight: normal;
+}
+
+.wrapper {
+  height: auto;
+}
+
+.page {
+  min-height: 100%;
+  height: auto !important;
+  width: 960px;
+  background-color: #EAE6E3;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul, li {
+  text-decoration: none;
+  list-style: none;
+}
+
+h1 {
+  font-family: Oswald, sans-serif;
+  font-weight: 300;
+}
+
+h2, h3, h4 {
+  font-family: Dosis, sans-serif;
+  font-weight: normal;
+  color: black;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 300;
+  color: #FA4444;
+}
+
+p, li {
+  font-size: 12px;
+}
+
+.graphic_identity {
+  background-color: black;
+  height-min: 100%;
+  height: 100% !important;
+}
+
+.container-photo {
+  border-radius: 50%;
+  background-color: red;
+  height: 50px;
+  width: 50px;
+}
+
+.intitule_experience {
+  border-right: 1px solid black;
+}
+
+.experience {
+  background-color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.first_box {
+  margin-bottom: 100px;
+  margin-top: 20px;
+}
 
 /*# sourceMappingURL=style.css.map */
