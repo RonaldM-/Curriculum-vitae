@@ -4,10 +4,97 @@ html
         meta(charset='utf8')
         meta(language='FR')
         meta(author='Ronald MARCEL')
-        link(href='/build/css/' type='css/text' rel='stylesheet' )
+        link(href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet')
+        link(href='build/css/style.css' rel='stylesheet')
         body
-            .page
-                section.presentation
-                section.experience
-                section.formation
-                section.skill
+            //MIXIN
+            mixin formation(what, where, when, ...details)
+                    .formation
+                        .what
+                            h3= what
+                        .where
+                            p= where
+                        .details
+                            ul
+                                each detail in details
+                                    li= detail
+                        .when
+                            span.date= when
+                            
+            mixin experience( what, where, when, ...details)
+                    .experience.col-lg-10.col-lg-offset-1
+                        .intitule_experience.col-lg-8
+                            .what
+                                h3= what
+                            .where
+                                p= where
+                            .details
+                                ul
+                                    each detail in details
+                                        li= detail
+                        .periode.col-lg-4
+                            .when
+                                span.date= when
+            .wrapper.container-fluid
+                .page.row
+                    section.aboutme.col-lg-12
+                        .identity.col-lg-8
+                            .graphic_identity.col-lg-4
+                                .container-photo
+                                    img
+                            .text_identity.col-lg-8
+                                .name.col-lg-12
+                                    h1 RONALD MARCEL
+                                .statut.col-lg-12
+                                    span Developpeur Front-End | Designer Produit
+                                .website.col-lg-12
+                                    span.www ronaldmarcel.com
+                        .info.col-lg-4.text-right
+                            .birth
+                                p 30 ans - 28/06/1986
+                            .phone
+                                p 06 84 18 69 59
+                            .email
+                                p ronald.marcel.mr@gmail.com
+                            .mobility
+                                p
+                            address.contact_details
+                                p 42 rue Louis Petri <br> 35200 RENNES
+                    section.formations.col-lg-6
+                        h2 FORMATIONS
+                        +formation('Formation Developpeur Front-End','Code Academie[Simplon.co]','2016', 'Developpement Web', 'Integration Web', 'Infographie')
+
+                        +formation('DSAA option Design Produit','LAAB','2012-2014', 'Developpement Web', 'Integration Web', 'Infographie')
+
+                        +formation('BTS Design Produit','Lycée Jean Monnet','2009-2010', 'Developpement Web', 'Integration Web', 'Infographie')
+
+                        +formation('BTS Design Produit','Lycée Jean Duhamel','2007-2019', 'Developpement Web', 'Integration Web', 'Infographie')
+
+                        +formation('Baccalauréat STI Arts Appliqués','Lycée Rivière des Pères','2005-2007', 'Developpement Web', 'Integration Web', 'Infographie')
+
+                        +formation('Baccalauréat STI Génie Mécanique','Lycée Paul LACAVE','2002-2005', 'Developpement Web', 'Integration Web', 'Infographie')
+
+                    section.skills.col-lg-6
+                        h2 COMPÉTENCES
+                        ul.list_skills
+                            li HTML:5 - CSS:3
+                            li PHP - MYSQL
+                            li JS - JQUERY
+                            li REACT.JS
+                            li NODEJS
+                            li JADE.JS/PUG.JS
+                            li WORDPRESS
+                            li REACT.JS
+                    section.experiences.col-lg-12
+                        h2 EXPÉRIENCES
+                        .block.col-lg-6
+                            +experience('Assistant Designer','Andy Martin Architects','De juin 2012 à septembre 2012', 'Conception mobilier et aménagement dinterieur', 'Integration Web', 'Infographie')
+
+                            +experience('Collaboration Artisan | Designer','Chez Fluïd Création',' mars 2012 à avril 2012', 'Conception mobilier et aménagement dinterieur', 'Integration Web', 'Infographie')
+                        .block.col-lg-6
+                            +experience('Assistant stagiaire','sculpteur modeleur céramiste François QUESNEL','Juin 2011', 'Conception mobilier et aménagement dinterieur', 'Integration Web', 'Infographie')
+
+                            +experience('Stagiaire Graphiste','Créapub','Juin 2008', 'Conception flyer et carte de visites', 'Integration Web', 'Infographie')
+
+                    section.loisirs.col-lg-12
+                        h2 LOISIRS
