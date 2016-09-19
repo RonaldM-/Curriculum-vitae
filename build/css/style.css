@@ -46,13 +46,36 @@ h2 {
 }
 
 h3 {
-  font-size: 18px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-size: 14px;
   font-weight: 300;
   color: #FA4444;
 }
 
+.exp, .loisir {
+  margin-left: 89px;
+}
+
 p, li {
   font-size: 12px;
+}
+
+p {
+  color: dimgray;
+}
+
+.place {
+  color: lightgray !important;
+}
+
+.desc {
+  margin: 0;
+}
+
+div.date {
+  margin-top: 18px;
+  font-size: 13px;
 }
 
 .graphic_identity {
@@ -83,6 +106,78 @@ p, li {
 .first_box {
   margin-bottom: 100px;
   margin-top: 20px;
+}
+
+/* FORMATIONS */
+.formation {
+  padding-left: 0%;
+}
+
+.infos {
+  padding-left: 0px;
+  list-style: disc;
+}
+.infos li {
+  display: block;
+  list-style: disc;
+  margin-right: 5px;
+}
+
+/* PROGRESS BAR */
+.progress_bar {
+  display: block;
+  height: 8px;
+  width: 300px;
+  position: relative;
+  background: white;
+}
+.progress_bar .progress {
+  display: block;
+  height: 100%;
+  position: absolute;
+  border-radius: 0px;
+  background-color: #f28518;
+}
+
+.novice {
+  width: 15%;
+}
+
+.advanced_beginner {
+  width: 25%;
+}
+
+.competent {
+  width: 50%;
+}
+
+.expert {
+  width: 90%;
+}
+
+.periode {
+  padding-top: 25px;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.month {
+  padding: 0;
+  font-size: 10px;
+}
+
+.year {
+  padding: 0;
+  font-size: 20px;
+}
+
+.info {
+  padding-top: 26px;
+  padding-right: 110px;
+}
+
+.identity {
+  padding-left: 60px;
 }
 
 /*# sourceMappingURL=style.css.map */
