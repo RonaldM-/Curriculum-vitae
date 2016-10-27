@@ -5,18 +5,19 @@ html
         meta(language='FR')
         meta(author='Ronald MARCEL')
         link(href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet')
-        link(href='build/css/style.css' rel='stylesheet')
+        link(href='build/css/style.css' media='screen' rel='stylesheet')
+        link(href='build/css/print.css' media='print' rel='stylesheet')
         body
             //MIXIN
             mixin formation(what, where, details)
                     .formation.col-lg-10.col-lg-offset-2
                         .what.col-lg-12
-                            h3= what 
+                            h3= what
                         .where.col-lg-12
                             p= where
                         .details.col-lg-12
                             p= details
-                            
+
             mixin experience( what, where, month, year, details)
                     .experience.col-lg-10.col-lg-offset-1
                         .intitule_experience.col-lg-9
