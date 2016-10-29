@@ -13,6 +13,7 @@ $small_font: 12px;
 $novice: 15%;
 $advanced_beginner: 25%;
 $competent: 50%;
+$underexpert: 75%;
 $expert: 90%;
 $color:red;
 
@@ -70,8 +71,12 @@ h3{
     font-weight: 300;
     color: $saumon;
 }
-.exp, .loisir{
+.exp{
     margin-left: 89px;
+}
+.loisir{
+   text-align: center;
+   margin-bottom: 20px;
 }
 p, li{
     font-size: $small_font;
@@ -124,7 +129,7 @@ div.date{
     list-style: disc;
   li{
       display: block;
-      list-style: disc; 
+      list-style: disc;
       margin-right: 5px;
     }
 }
@@ -153,6 +158,9 @@ div.date{
 .competent{
     @include progress-per-cent($competent)
 }
+.underexpert{
+    @include progress-per-cent($underexpert)
+}
 .expert{
     @include progress-per-cent($expert)
 }
@@ -166,7 +174,7 @@ div.date{
 .month{
     padding: 0;
     font-size: 10px;
-} 
+}
 
 .year{
     padding: 0;
@@ -180,4 +188,32 @@ div.date{
 }
 .identity{
     padding-left: 60px;
+}
+
+.loisirs{
+  margin-top: 30px;
+  margin-bottom: 50px;
+  border-top: 1px dotted #C0C0C0;
+  .illustration{
+    text-align: center;
+    i{
+      font-size: 60px;
+    }
+  }
+  .information{
+    .title{
+      h4{
+        text-align: center;
+      }
+    }
+    .details{
+      li {
+        font-size: 14px;
+        list-style: circle;
+      }
+    }
+  }
+}
+.spacer{
+
 }

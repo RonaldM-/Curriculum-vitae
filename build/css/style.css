@@ -53,8 +53,13 @@ h3 {
   color: #FA4444;
 }
 
-.exp, .loisir {
+.exp {
   margin-left: 89px;
+}
+
+.loisir {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 p, li {
@@ -151,6 +156,10 @@ div.date {
   width: 50%;
 }
 
+.underexpert {
+  width: 75%;
+}
+
 .expert {
   width: 90%;
 }
@@ -178,6 +187,25 @@ div.date {
 
 .identity {
   padding-left: 60px;
+}
+
+.loisirs {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  border-top: 1px dotted #C0C0C0;
+}
+.loisirs .illustration {
+  text-align: center;
+}
+.loisirs .illustration i {
+  font-size: 60px;
+}
+.loisirs .information .title h4 {
+  text-align: center;
+}
+.loisirs .information .details li {
+  font-size: 14px;
+  list-style: circle;
 }
 
 /*# sourceMappingURL=style.css.map */
